@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire de démo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <form id="formulaire-demo">
+        <label for="telephone">Numéro de téléphone:</label>
+        <input type="text" id="telephone" name="telephone">
+        <span id="erreur-telephone" class="message-erreur"></span>
+
+        <input type="submit" value="Soumettre">
+    </form>
+
+	<p>Regex utilisée : /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/</p>
+	<br>
+	<p>(prend en compte les espaces et la ponctuation)</p>
+	<div>
+	<p style="color:green">+33652378512</p>
+	<p style="color:red">+330652378512</p>
+	<p style="color:green">06 01 02 03 04</p>
+	<p style="color:green">+33 6 01 02 03 04</p>
+	<p style="color:red">00652378512</p>
+	<p style="color:green">0033 7 01 02 03 04</p>
+	<p style="color:green">06.52.37.85.12</p>
+	</div>
+
+
+    <script src="script.js"></script>
+    </body>
+    </html>
